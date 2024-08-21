@@ -1,4 +1,4 @@
-# workflow-automations
+# Workflow Automations
 My workflow automations for peace of mind and speed.
 
 ## Table of Contents
