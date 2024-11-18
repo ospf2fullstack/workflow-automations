@@ -35,6 +35,6 @@ echo Secret Access Key Successfully
 for /f "delims=" %%c in ('echo !session_response! ^| jq -r ".Credentials.SessionToken"') do set AWS_SESSION_TOKEN=%%c
 echo Session Token Set Successfully
 
-aws s3 sync "E:/S3/ncam-cui-pointclouds-bucket/" "s3://ncam-cui-pointclouds-bucket/" --exclude "A1-1/*" --delete
+aws s3 sync "E:/NCAM/cui_pointclouds/" "s3://ncam-cui-pointclouds-bucket/" --exclude "A1-1/*" --delete
 
 endlocal
